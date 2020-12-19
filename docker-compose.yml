@@ -45,6 +45,8 @@ services:
     ports:
       - "5001:5001/tcp"
       - "5001:5001/udp"
+      - "5044:5044/tcp"
+      - "5044:5044/udp"
       - "9600:9600"
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
