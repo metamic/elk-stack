@@ -9,7 +9,7 @@ services:
         VERSION: $ELASTICSEARCH_VERSION
     volumes:
       - type: bind
-        source: "${PWD}/ELK/elasticsearch/config/elasticsearch.yml"
+        source: "${PWD}/elasticsearch/config/elasticsearch.yml"
         target: /usr/share/elasticsearch/config/elasticsearch.yml
         read_only: true
       - "${PWD}/elasticsearch/data:/usr/share/elasticsearch/data"
@@ -33,11 +33,11 @@ services:
         VERSION: $LOGSTASH_VERSION
     volumes:
       - type: bind
-        source: "${PWD}/ELK/logstash/config/logstash.yml"
+        source: "${PWD}/logstash/config/logstash.yml"
         target: /usr/share/logstash/config/logstash.yml
         read_only: true
       - type: bind
-        source: "${PWD}/ELK/logstash/pipeline"
+        source: "${PWD}/logstash/pipeline"
         target: /usr/share/logstash/pipeline
         read_only: true
     ports:
