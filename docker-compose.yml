@@ -2,6 +2,7 @@ version: '3.2'
 
 services:
   elasticsearch:
+    container_name: elasticsearch
     build:
       context: "${PWD}/elasticsearch/"
       dockerfile: elastic.Dockerfile
@@ -26,6 +27,7 @@ services:
       - elk-stack
 
   logstash:
+    container_name: logstash
     build:
       context: "${PWD}/logstash/"
       dockerfile: logstash.Dockerfile
@@ -52,6 +54,7 @@ services:
       - elasticsearch
 
   kibana:
+    container_name: kibana
     build:
       context: ${PWD}/kibana/
       dockerfile: kibana.Dockerfile
