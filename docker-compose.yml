@@ -30,7 +30,7 @@ services:
       context: "${PWD}/logstash/"
       dockerfile: logstash.Dockerfile
       args:
-        VERSION: $LOGSTAH_VERSION
+        VERSION: $LOGSTASH_VERSION
     volumes:
       - type: bind
         source: "${PWD}/ELK/logstash/config/logstash.yml"
