@@ -25,11 +25,12 @@ LOGSTASH_VERSION=7.10.1
 # ELASTICSEARCH_PASSWORD=mypassword <<< for security reasons, it is recommended to register as an environment variable.
 ```
 
-third, change your ElaticSearch Password
+third, change your elastic search password.
+
 🔑this is very important your server security.
 
 ```
-ELASTICSEARCH_PASSWORD=<YOUR PASSWORD>
+export ELASTICSEARCH_PASSWORD=<YOUR PASSWORD>
 ```
 
 last, run script
