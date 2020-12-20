@@ -16,15 +16,20 @@ git clone https://github.com/metamic/elk-stack.git
 cd elk-stack
 ```
 
-second, change your login password in .env
-
-🔑this is very important your server security.
+second, change ELK version default is below
 ```
 ELASTICSEARCH_VERSION=7.10.0
 KIBANA_VERSION=7.10.1
 LOGSTASH_VERSION=7.10.1
 
-ELASTICSEARCH_PASSWORD=mypassword <<< here
+# ELASTICSEARCH_PASSWORD=mypassword <<< for security reasons, it is recommended to register as an environment variable.
+```
+
+third, change your ElaticSearch Password
+🔑this is very important your server security.
+
+```
+ELASTICSEARCH_PASSWORD=<YOUR PASSWORD>
 ```
 
 last, run script
