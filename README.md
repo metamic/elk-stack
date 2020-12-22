@@ -2,6 +2,13 @@
 
 This project is created for users who want to use ELK easily.
 
+the stack is configured separated each project.
+
+so you can git clone like below for submodules.
+```
+git clone ---recursive https://github.com/metamic/elk-stack
+```
+
 Please use ELK-Stack for your projects easily.
 
 Thank you :)
