@@ -33,8 +33,8 @@ third, change your elastic search password.
 export ELASTICSEARCH_PASSWORD=<YOUR PASSWORD>
 ```
 
-last, run script
+last, start script
 ```
-chmod 755 ./run.sh
-./run.sh
+chmod 755 ./start.sh
+./start.sh
 ```
