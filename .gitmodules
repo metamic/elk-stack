@@ -1,0 +1,9 @@
+[submodule "conf/logstash"]
+	path = conf/logstash
+	url = https://github.com/metamic/logstash.git
+[submodule "conf/elasticsearch"]
+	path = conf/elasticsearch
+	url = https://github.com/metamic/elasticsearch
+[submodule "conf/kibana"]
+	path = conf/kibana
+	url = https://github.com/metamic/kibana
