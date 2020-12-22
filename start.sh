@@ -29,7 +29,7 @@ sed -i "s/\$ELASTICSEARCH_PASSWORD/$ELASTICSEARCH_PASSWORD/g" $PWD/kibana/config
 sed -i "s#\$ELASTICSEARCH_HOST#$ELASTICSEARCH_HOST#g" $PWD/logstash/config/logstash.yml
 sed -i "s/\$ELASTICSEARCH_PASSWORD/$ELASTICSEARCH_PASSWORD/g" $PWD/logstash/config/logstash.yml
 
-sed -i "s#\$OUTPUT_ELASTICSEARCH_HOST#$OUTPUT_ELASTICSEARCH_HOST#g" $PWD/logstash/pipeline/logstash.conf
-sed -i "s/\$ELASTICSEARCH_PASSWORD/$ELASTICSEARCH_PASSWORD/g" $PWD/logstash/pipeline/logstash.conf
+find $PWD/logstash/pipeline -type f -exec sed -i -e "s#\$OUTPUT_ELASTICSEARCH_HOST#$OUTPUT_ELASTICSEARCH_HOST#g" {} \;
+find $PWD/logstash/pipeline -type f -exec sed -i -e "s#\$ELASTICSEARCH_PASSWORD#$ELASTICSEARCH_PASSWORD#g" {} \;
 
 docker-compose up --build -d
