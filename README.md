@@ -45,3 +45,14 @@ last, start script
 chmod 755 ./start.sh
 ./start.sh
 ```
+
+if you got 'data too large' error, you can change jvm.options of elasticsearch
+
+```
+docker exec -it elasticsearch /bin/bash
+vim  /usr/share/elasticsearch/config/jvm.options
+
+# change this
+-Xms4g
+-Xmx4g
+```
