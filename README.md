@@ -50,7 +50,7 @@ if you got 'data too large' error, you can change jvm.options of elasticsearch
 
 ```
 docker exec -it elasticsearch /bin/bash
-vim  /usr/share/elasticsearch/config/jvm.options
+vi /usr/share/elasticsearch/config/jvm.options
 
 # change this
 -Xms4g
